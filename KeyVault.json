@@ -1,0 +1,77 @@
+{
+  "id": "/subscriptions/0ee75fc1-4310-48d9-b5ca-023abffca46d/resourceGroups/UbuntuHyperVRG/providers/Microsoft.KeyVault/vaults/UbuntuHyperVault",
+  "location": "eastus",
+  "name": "UbuntuHyperVault",
+  "properties": {
+    "accessPolicies": [
+      {
+        "applicationId": null,
+        "objectId": "4d67e5df-2389-4b1a-80d1-e03c94501877",
+        "permissions": {
+          "certificates": [
+            "get",
+            "list",
+            "delete",
+            "create",
+            "import",
+            "update",
+            "managecontacts",
+            "getissuers",
+            "listissuers",
+            "setissuers",
+            "deleteissuers",
+            "manageissuers",
+            "recover"
+          ],
+          "keys": [
+            "get",
+            "create",
+            "delete",
+            "list",
+            "update",
+            "import",
+            "backup",
+            "restore",
+            "recover"
+          ],
+          "secrets": [
+            "get",
+            "list",
+            "set",
+            "delete",
+            "backup",
+            "restore",
+            "recover"
+          ],
+          "storage": [
+            "get",
+            "list",
+            "delete",
+            "set",
+            "update",
+            "regeneratekey",
+            "setsas",
+            "listsas",
+            "getsas",
+            "deletesas"
+          ]
+        },
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+      }
+    ],
+    "createMode": null,
+    "enableSoftDelete": null,
+    "enabledForDeployment": false,
+    "enabledForDiskEncryption": null,
+    "enabledForTemplateDeployment": null,
+    "provisioningState": "RegisteringDns",
+    "sku": {
+      "name": "standard"
+    },
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "vaultUri": "https://UbuntuHyperVault.vault.azure.net"
+  },
+  "resourceGroup": "UbuntuHyperVRG",
+  "tags": {},
+  "type": "Microsoft.KeyVault/vaults"
+}
