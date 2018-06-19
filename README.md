@@ -1,4 +1,4 @@
-# Project Name
+# Azure Key Vault - Getting Started in .NET
 
 This sample demonstrates how to get started with Key Vault in .NET
 This project allows you to do 
