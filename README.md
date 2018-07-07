@@ -57,17 +57,16 @@ In addition you would need
 - We then want to set these variables by running the following commands
     - On Windows (Use set)
     - On Mac/Linux (Use export instead of set)
-    <br />
     ```
-        export SERVICE_PRINCIPAL_NAME="service_principal_name" 
+    export SERVICE_PRINCIPAL_NAME="service_principal_name" 
     ```
-    <br />
+    
     ```
-        export RESOURCE_GROUP_NAME="resource_group_name"
+    export RESOURCE_GROUP_NAME="resource_group_name"
     ```
-    <br />
+    
     ```
-        export VAULT_NAME="vault_name"
+    export VAULT_NAME="vault_name"
     ```
 - This command creates a self signed certificate. It also creates an Application (service principal) in AAD and assigns this self signed certificate as it's key
 
