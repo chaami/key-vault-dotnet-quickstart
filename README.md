@@ -33,7 +33,10 @@ In addition you would need
    ```
    cd key-vault-dotnet-quickstart
    ```
-- Find the powershell command in this repo (Named Setup.ps1) and run it in administrator mode
+- Find the powershell command in this repo (Named Setup.ps1) and run it in administrator mode by running the following command in a powershell window
+   ```
+   .\Setup.ps1
+   ```
    ```
    Please remember the password you give when you run this powershell command
    ```
