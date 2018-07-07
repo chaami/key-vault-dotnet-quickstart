@@ -34,14 +34,19 @@ git clone https://github.com/Azure-Samples/key-vault-dotnet-quickstart.git
 cd key-vault-dotnet-quickstart
 ```
 - Find the powershell command in this repo (Named Setup.ps1) and run it in administrator mode
+   ```
+   Please remember the password you give when you run this powershell command
+   ```
 - Find the certificate named .pfx file in the current folder (The name of the certificate that the powershell command created)
   and install it on your machine (by right clicking on the .pfx file and selecting Install)
+  
 - Open the repo in any text editor and run the following command with respect to that folder. The commands are listed as below
    ```
     dotnet restore
     dotnet run
    ```
-    You should see that you did all the steps listed [above](https://github.com/Azure-Samples/key-vault-dotnet-quickstart#azure-key-vault---getting-started-in-net)
+    :+1: You should see that you did all the steps listed [above](https://github.com/Azure-Samples/key-vault-dotnet-quickstart#azure-key-vault---getting-started-in-net)
+    
 #### On Mac\Linux
 
 ## Resources
