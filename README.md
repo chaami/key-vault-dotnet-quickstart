@@ -9,14 +9,6 @@ This project allows you to do
 - Create a secret in Key Vault
 - Read the secret from Key Vault
 
-## Features
-
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
-
 ## Getting Started
 
 ### Prerequisites
@@ -30,13 +22,6 @@ In addition you would need
     * Please download git from [here](https://git-scm.com/downloads).
 * [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
     * For the purpose of this tutorial we would work with Azure CLI which is available on Windows, Mac and Linux
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
 
 ### Quickstart
 (Add steps to get up and running quickly)
@@ -48,39 +33,16 @@ In addition you would need
 - Download the powershell command in this repo (Named Setup.ps1) and run it in administrator mode
 - Go to C:\Temp folder by using cd C:\temp command. 
 - Find the cert named .pfx in that folder and install it on your machine (by right clicking on the .pfx file and selecting Install)
-- Clone this repository. Once cloned open the repo in any text editor and run the following command w.r.t that folder
+- Clone this repository. Once cloned open the repo in any text editor and run the following command with respect to that folder. The commands are listed as below
     - dotnet restore
     - dotnet run
 #### On Mac\Linux
-
-
-
-### What does this code do?
-- This sample will show you how to create a test key and secret in Key Vault
-- It will also show you how to retrieve the secret from Key Vault
-
-- Next if we need to point the users to different section of code (in a different file) we still have the code copy here and explain what it does
-- This section should feel like a story where we explain 
-  - What concepts we want users to understand?
-  - What sections of code we want users to focus on?
-  - As a result Best practices that we want users to follow
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
 
 ## Resources
 
 (Any additional resources or related projects)
 
-- Link to supporting information
-- Link to similar sample
-- ...
+- [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)
+- [Azure Key Vault Documentation](https://docs.microsoft.com/en-us/azure/key-vault/)
+- [Azure SDK For .NET](https://github.com/Azure/azure-sdk-for-net)
+- [Azure REST API Reference](https://docs.microsoft.com/en-us/rest/api/keyvault/?redirectedfrom=AzureSamples)
