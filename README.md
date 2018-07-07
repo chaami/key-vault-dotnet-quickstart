@@ -52,7 +52,7 @@ In addition you would need
     
 #### On Mac\Linux
 - This quickstart requires that you are running the Azure CLI version 2.0.4 or later. To find the version, run `az --version`. If you need to install or upgrade, see [Install Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
-- First we want to download / clone this [repo](https://github.com/yvprashanth/key-vault-dotnet-quickstart)
+- First we want to download / clone this [repo](https://github.com/Azure-Samples/key-vault-dotnet-quickstart)
 - Then cd into dotnetconsole folder
 - We then want to set these variables by running the following commands
     - On Windows (Use set)
