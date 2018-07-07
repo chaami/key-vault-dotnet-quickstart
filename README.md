@@ -26,13 +26,13 @@ In addition you would need
 ### Quickstart
 #### On Windows
 - Clone this repo by running this command
-```
-git clone https://github.com/Azure-Samples/key-vault-dotnet-quickstart.git
-```
+   ```
+   git clone https://github.com/Azure-Samples/key-vault-dotnet-quickstart.git
+   ```
 - change directory into this folder by running 
-```
-cd key-vault-dotnet-quickstart
-```
+   ```
+   cd key-vault-dotnet-quickstart
+   ```
 - Find the powershell command in this repo (Named Setup.ps1) and run it in administrator mode
    ```
    Please remember the password you give when you run this powershell command
