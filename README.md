@@ -24,11 +24,6 @@ In addition you would need
     * For the purpose of this tutorial we would work with Azure CLI which is available on Windows, Mac and Linux
 
 ### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
 #### On Windows
 - Download the powershell command in this repo (Named Setup.ps1) and run it in administrator mode
 - Go to C:\Temp folder by using cd C:\temp command. 
