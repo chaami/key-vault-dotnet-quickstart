@@ -39,10 +39,6 @@ $cert = New-SelfSignedCertificate -certstorelocation cert:\localmachine\my -dnsn
 $securepwd = ConvertTo-SecureString -String $password -Force -AsPlainText
 $path = "cert:\localMachine\my\" + $cert.thumbprint
 
-If(!(test-path $tempFolder))
-{
-      New-Item -ItemType Directory -Force -Path $tempFolder
-}
 $certThumbprint = $cert.thumbprint
 $certStore = "Cert:\localMachine\my"
 
@@ -50,17 +46,26 @@ $certStore = "Cert:\localMachine\my"
 # Export the self signed cert to temp folder
 # **********************************************************************************************
 Write-Host 'Exporting a Self Signed Certificate named ' $CertName  'to C:\temp folder' -foregroundcolor Green
-Export-PfxCertificate -cert $path -FilePath C:\temp\$CertName.pfx -Password $securepwd 
-Export-Certificate -cert $path -FilePath C:\temp\$CertName.crt
+
+$certStoreLocation = Get-Location
+$certStoreLocation = Join-Path -Path $certStoreLocation -ChildPath $CertName
+$certNamePfx = $certStoreLocation + ".pfx"
+$certNameCrt = $certStoreLocation + ".crt"
+
+Write-Host Get-Location
+Write-Host $certNamePfx
+Write-Host $certStoreLocation
+
+Export-PfxCertificate -cert $path -FilePath $certNamePfx -Password $securepwd 
+Export-Certificate -cert $path -FilePath $certNameCrt
 
 # **********************************************************************************************
 # Import certificate into certificate store on Windows
 # **********************************************************************************************
 # Import-PfxCertificate -FilePath C:\temp\$CertName.pfx -CertStoreLocation Cert:\LocalMachine\My -Password $securepwd
 
-Set-Location -Path C:\Temp
 $x509 = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
-$x509.Import([string]::Concat($tempFolder,$CertName,".crt"))
+$x509.Import($certNameCrt)
 $credValue = [System.Convert]::ToBase64String($x509.GetRawCertData())
 $validFrom = [System.DateTime]::Now
 $validTo = [System.DateTime]::Now.AddDays(5)
@@ -104,4 +109,7 @@ Set-AzureRmKeyVaultAccessPolicy -VaultName $vaultName -ResourceGroupName $resour
 [System.Environment]::SetEnvironmentVariable('KEYVAULT_URI', $vaultName, [System.EnvironmentVariableTarget]::User)
 [System.Environment]::SetEnvironmentVariable('CERT_THUMBPRINT', $certThumbprint, [System.EnvironmentVariableTarget]::User)
 
-Write-Host 'Cert Thumbprint ' $certThumbprint  'Application Name in AAD is ' $applicationName "Vault Name " $vaultName -foregroundcolor Green | Format-Table
+Write-Host 'APPLICATION_ID ' $adapp.ApplicationId  
+Write-Host 'Cert Thumbprint ' $certThumbprint  
+Write-Host 'Application Name in AAD is ' $applicationName 
+Write-Host "Vault Name " $vaultName -foregroundcolor Green | Format-Table
