@@ -29,7 +29,6 @@ $password = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropS
 # **********************************************************************************************
 $location            = 'East US'                          # Get-AzureLocation
 $dnsName             = 'mytest.domain.com'
-$tempFolder = "C:\temp\"
 
 # **********************************************************************************************
 # Create a self signed cert
