@@ -46,7 +46,7 @@ In addition you would need
 - Open the repo in any text editor and run the following command with respect to that folder. The commands are listed as below
    ```
     dotnet restore
-    dotnet run
+    dotnet run -p KeyVaultQuickStart
    ```
     :+1: You should see that you did all the steps listed [above](https://github.com/Azure-Samples/key-vault-dotnet-quickstart#azure-key-vault---getting-started-in-net)
     
@@ -121,13 +121,13 @@ In addition you would need
 
 - Once done, with above commands clone this [repo](https://github.com/yvprashanth/key-vault-dotnet-quickstart) by running the following command
     ```
-    git clone https://github.com/yvprashanth/key-vault-dotnet-quickstart.git
+    git clone https://github.com/chaami/key-vault-dotnet-quickstart.git
     ```
 
     Then cd into that folder and run dotnet run
 
     ```
-    dotnet run
+    dotnet run -p KeyVaultQuickStart 
     ```
 :+1: You should see that you did all the steps listed [above](https://github.com/Azure-Samples/key-vault-dotnet-quickstart#azure-key-vault---getting-started-in-net)
 

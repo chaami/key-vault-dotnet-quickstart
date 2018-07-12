@@ -1,16 +1,11 @@
 ﻿using System;
 using System.IO;
+using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Collections.ObjectModel;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.Azure.KeyVault;
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-namespace dotnetconsole
+namespace KeyVaultQuickStart
 {
     class Program
     {

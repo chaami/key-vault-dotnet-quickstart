@@ -1,13 +1,11 @@
-using System;
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
-using Microsoft.Azure.KeyVault;
-using System.Threading.Tasks;
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.Azure.KeyVault.Models;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading.Tasks;
+using Microsoft.Azure.KeyVault;
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-namespace dotnetconsole
+namespace KeyVaultQuickStart
 {
     public class KeyVault
     {
